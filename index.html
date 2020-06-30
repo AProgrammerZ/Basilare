@@ -1,0 +1,80 @@
+<!-- Learned part of the code online, including from w3schools.com, stackoverflow.com, reddit.com, youtube.com, medium.freecodecamp.org, css-tricks.com, getbootstrap.com  -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <link href="nav_bars.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Montserrat:400,500,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <title>Basilare</title>
+    </head>
+    <body>
+<!-- Navigation bar -->
+        <div class="flexbox" id="my_navbar">
+            <i id="open_icon" class="fas fa-bars three_bars"></i>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="meats.html">Meats</a>
+                    <a href="grains.html">Grains</a>
+                    <a href="vegetables.html">Vegetables</a>
+                </div>
+            <div class="nav_title">Basilare</div>
+            <i class="fas fa-search search_icon"></i>
+        </div>
+
+<!-- Title page -->
+        <header>
+            <div class="container1">
+                <p class="title">Basilare</p>
+                <div class="title_subheader">Basic Cooking Techniques</div>
+                <a href="#button_click"> <button type="button"> <i class="fas fa-angle-down arrow"></i> </button> </a>
+            </div>
+        </header>
+<!-- Main area -->
+        <main id="button_click">
+            <div class="container-fluid">
+                <div class="row row_box grey">
+                    <div class="col-md-6 col_height_mobile stacked_order padding_0">
+                        <a href="meats.html">
+                            <div class="homepage_imgs meats"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col_height_mobile homepage_text">
+                        <a href="meats.html" class="homepage_headers">Meats</a>
+                        <p class="homepage_subheaders">Steak, Chicken, Fish, Burger, Eggs, Turkey</p>
+                    </div>
+                </div>
+                <div class="row row_box">
+                    <div class="col-md-6 col_height_mobile padding_0 order">
+                        <a href="grains.html">
+                            <div class="homepage_imgs grains"></div>
+                        </a>                    </div>
+                    <div class="col-md-6 col_height_mobile homepage_text">
+                        <a href="grains.html" class="homepage_headers">Grains</a>
+                        <p class="homepage_subheaders">Bread, Oats, Quinoa, Rice, Pasta, Buckwheat</p>
+                    </div>
+                </div>
+                <div class="row row_box grey">
+                    <div class="col-md-6 col_height_mobile stacked_order padding_0">
+                        <a href="vegetables.html">
+                            <div class="homepage_imgs vegetables"></div>
+                        </a>                    </div>
+                    <div class="col-md-6 col_height_mobile homepage_text">
+                        <a href="vegetables.html" class="homepage_headers">Vegetables</a>
+                        <p class="homepage_subheaders">Salads, Potato, Sweet Potato, Squash, Sautéed Vegetables, Ratatouille</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <!-- JavaScript and Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="main_javascript.js"></script>
+    <script src="javascript_for_homepage.js"></script>
+    </body>
+</html>

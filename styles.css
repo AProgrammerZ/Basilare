@@ -1,0 +1,176 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* The sidebar links */
+.sidenav a:nth-child(2) {
+    color: #e67300;
+}
+
+                                                    /* Title page */
+header
+{
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('website_pictures/kim-daniels-1667325-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+
+    /*learned from css-tricks(https://css-tricks.com/the-trick-to-viewport-units-on-mobile/)*/
+        height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 100);
+}
+.container1
+{
+    height:100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+}
+.title
+{
+    margin-top:auto;
+    font-size: calc(5em + 7vw);
+    font-weight: bold;
+    font-family: 'Courgette', sans-serif;
+}
+.title_subheader
+{
+    font-size: calc(1.5em + 1vw);
+    font-family: 'Courgette', sans-serif;
+    margin-top: -1em;
+
+     /*box-sizing: content-box;
+    width:100vw;
+    white-space:pre-wrap;*/
+}
+.container1>a { /*https://www.reddit.com/r/learnprogramming/comments/bs4e5c/scaling_problems_with_texts/*/
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+button
+{
+    background-color: transparent;
+    border: none;
+}
+button:focus /* to remove outline after clicking botton*/
+{
+    outline:none;
+}
+.arrow
+{
+    color: white;
+    font-size:3em;
+}
+.arrow:hover
+{
+    color:#ff8000;
+}
+main::before /*https://css-tricks.com/hash-tag-links-padding/*/
+{ 
+  display: block; 
+  content: " "; /*a space I'm assuming, with a height of 4.5em (?)*/
+  margin-top: -4.5em; 
+  height: 4.5em; 
+}
+                                                    /* Main area */
+.row_box
+{
+    height:calc(100vh - 4.5em);
+    height:calc( (var(--vh, 1vh) * 100) - 4.5em); /*(navbar is 4.5em)*/
+}
+.grey
+{
+    background-color:#e6e6e6;
+}
+
+/* To fix mobile problem (https://stackoverflow.com/questions/56640711/bootstrap-unequal-columns-on-stacked) */
+@media (max-width: 767.98px) { 
+    .col_height_mobile
+    {
+        height:50%;
+    }
+}
+
+.padding_0
+{
+    padding:0;
+}
+.order
+{
+    order: 2;
+}
+
+@media (max-width: 767.98px) { 
+    .stacked_order{
+        order:2;
+    }
+}
+.homepage_imgs
+{
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.homepage_imgs:hover
+{
+    box-shadow:0px 0px 10px 5px grey;
+    transition:box-shadow .2s;
+}
+.meats
+{
+    background-image: url("website_pictures/victoria-shes-1531800-unsplash.jpg");
+}
+.grains
+{
+    background-image: url("website_pictures/cereal-563796_1280.jpg");
+}
+.vegetables
+{
+   background-image: url("website_pictures/appetizer-bowls-cuisine-1640770.jpg");
+}
+.homepage_text
+{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    color: #404040;
+    hyphens: auto;
+}
+.homepage_headers
+{
+    font-size: calc(5em + .5vw);
+    color: #e67300;
+    transition: color .2s;
+}
+.homepage_subheaders
+{
+    font-size: calc(1.5em + .5vw);
+}
+.homepage_headers:hover
+{
+    color: #ff9933;
+    text-decoration: none;
+}
+
+/* text too small on desktop fix */
+@media (min-width: 1200px) {
+    .homepage_headers
+    {
+        font-size: calc(4.5em + 1vw);
+    }
+}
+@media (min-width: 1200px) {
+    .homepage_subheaders
+    {
+        font-size: calc(1.2em + 1vw);
+    }
+}

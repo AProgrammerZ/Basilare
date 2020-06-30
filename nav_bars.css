@@ -1,0 +1,77 @@
+/* Navigation bar */
+#my_navbar
+{
+    width: 100vw;
+    /*learned from css-tricks(https://css-tricks.com/the-trick-to-viewport-units-on-mobile/)*/
+        /*height: calc(4.5em+1vh); /* Fallback for browsers that do not support Custom Properties */
+        /*height: calc(4.5em + (var(--vh, 1vh) * 1) );*/
+        height:4.5em;
+    background-color: white;
+    color:#333333;
+
+    box-shadow: 1px 1px 10px 1px grey;
+    position: fixed;
+    z-index: 3;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.flexbox
+{
+    display: flex;
+}
+.three_bars
+{
+    font-size: 1.5em;
+    margin-left: calc(1em + 1vw);
+    cursor: pointer;
+}
+.nav_title
+{
+    font-size:2.5em;
+    font-weight: bold;
+    font-family: 'Courgette', sans-serif;
+}
+.search_icon
+{
+    font-size:1.5em;
+    margin-right:calc(1em + 1vw);
+    cursor: pointer;
+    visibility: hidden;
+}
+
+/* Side navigation bar */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - changes with JavaScript */
+  position: fixed;
+  z-index: 1;
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white;
+  box-shadow: none; /* no shadow - changes with JavaScript */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* The sidebar links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.7em;
+  font-family: 'Montserrat', sans-serif;
+  color: #595959;
+  display: block;
+}
+.sidenav a:hover {
+  color: #ff9933;
+  transition: 0.3s; /*for hover*/
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 2.5em;
+  margin-left: 50px;
+}

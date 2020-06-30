@@ -1,0 +1,54 @@
+/* Navigation bar */
+#my_navbar
+{
+    background-color:#e6e6e6;
+    box-shadow: none;
+    color:#404040;
+    transition: all .2s;
+}
+
+.header
+{
+    padding-top:calc(var(--vh, 1vh) * 12); /*12vh because nav bar is 12vh in height */;
+    font-family:'Montserrat', sans-serif;
+    font-size:calc(4em + .5vw);
+    color: #404040;
+}
+.header_background
+{
+    height:25em;
+    background-color:#e6e6e6;
+    margin-bottom:5em;
+}
+.flexbox2
+{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+figcaption
+{
+    font-size:calc(1em + 1vw);
+    font-family:'Montserrat', sans-serif;
+    height:3em;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+figure:hover
+{
+    box-shadow:1px 1px 10px 1px grey;
+    transition:box-shadow .2s;
+}
+
+.margin_left
+{
+    padding-left: 3.5em;
+    padding-right:2em;
+}
+.margin_right
+{
+    padding-right:3.5em;
+    padding-left:2em;
+}
